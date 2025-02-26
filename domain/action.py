@@ -2,8 +2,8 @@ from enum import Enum
 
 
 class Action(Enum):
-    SELL = "sell"
-    BUY = "buy"
+    SELL = "SELL"
+    BUY = "BUY"
 
     @classmethod
     def of(cls, action_str: str):
