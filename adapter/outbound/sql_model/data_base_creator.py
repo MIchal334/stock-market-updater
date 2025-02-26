@@ -13,7 +13,7 @@ class OwnedStock(Base):
     id = Column(Integer, primary_key=True)
     customer_email = Column(String, nullable=False)
     company_name = Column(String, nullable=False)
-    action_amount = Column(Integer, nullable=False)  # Zmienione na Integer
+    action_amount = Column(Integer, nullable=False)
 
 
 engine = None
