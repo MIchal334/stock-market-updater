@@ -28,4 +28,6 @@ def config_database():
 
 def create_session():
     global engine
-    return sessionmaker(bind=engine)
+    Session = sessionmaker(bind=engine)
+    return Session()
+

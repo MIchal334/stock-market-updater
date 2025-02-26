@@ -19,10 +19,12 @@ class SellerService:
             executor.submit(self.__businesses_operation)
 
     def __businesses_operation(self):
+        print("START BUISSNES PROCESS")
         event_to_process = self.event_handler.handle_event()
         if event_to_process is None:
             return
 
+        print(f"EVENT {event_to_process}")
         current_action_amount = self.data_updater.get_current_amount_of_action(user_email=event_to_process.client_email,
                                                                                company_name=event_to_process.company_name)
 
