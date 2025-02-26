@@ -2,3 +2,4 @@ kink == 0.8.1
 pytest==7.1.2
 pytest-mock==3.7.0
 confluent-kafka==2.8.0
+sqlalchemy==2.0.38
