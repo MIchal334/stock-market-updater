@@ -8,7 +8,7 @@ class Action(Enum):
     @classmethod
     def of(cls, action_str: str):
         try:
-            return cls(action_str.lower())
+            return cls(action_str)
         except ValueError:
             raise ValueError(f"Invalid action: {action_str}")
 

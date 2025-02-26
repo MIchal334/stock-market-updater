@@ -3,3 +3,4 @@ pytest==7.1.2
 pytest-mock==3.7.0
 confluent-kafka==2.8.0
 sqlalchemy==2.0.38
+schedule==1.2.2

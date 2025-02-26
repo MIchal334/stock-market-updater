@@ -7,7 +7,7 @@ class SqlDataUpdater(DataUpdater):
         session = create_session()
         record = session.query(OwnedStock).filter_by(customer_email=user_email, company_name=company_name).first()
         if record is None:
-            record = 0
+            return 0
 
         return record.action_amount
 
