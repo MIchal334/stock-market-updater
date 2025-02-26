@@ -13,4 +13,8 @@ class Action(Enum):
             raise ValueError(f"Invalid action: {action_str}")
 
     def apply(self, a: int, b: int) -> int:
-        return a + b if self == Action.SELL else a - b
+        if self == Action.SELL:
+            result = a - b
+            return max(result, 0)
+        else:
+            return a + b
