@@ -1,5 +1,7 @@
 from abc import abstractmethod, ABC
 
+from domain.event_info import EventInfo
+
 
 class EventHandler(ABC):
 
